@@ -1,0 +1,197 @@
+body {
+    margin: 0;
+    height: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+.meni {
+    background: rgba(255, 255, 255, 0.5);
+    display: grid;
+    grid-template-columns: [prva] 30% [druga] 15% [treca] 15% [cetvrta] 15% [peta] 15% [sesta];
+    justify-items: center;
+    align-items: top;
+    position: sticky;
+    height: 100px;
+    width: 100%;
+    grid-gap: 10px;
+    background: rgba(226, 139, 139, 0.5);
+}
+
+.Izlozba {
+    justify-self: top;
+    align-self: center;
+
+}
+
+.OGaleriji {
+    grid-column: cetvrta/peta;
+    justify-self: center;
+    align-self: center;
+}
+
+.Pocetna {
+    grid-column: treca/cetvrta;
+    justify-self: center;
+    align-self: center;
+    width: 60% center;
+    
+}
+
+.Kontakt {
+    grid-column: peta/sesta;
+    justify-self: center;
+    align-self: center;
+}
+
+.logo {
+    justify-self: center;
+    align-self: end;
+    width: 100%;
+    height: 130px;
+    padding: 0 50px 0 20px;
+}
+
+a{
+    display: -moz-popup;
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #333;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+  }
+
+  a span{
+    position: relative;
+    z-index: 2;
+  }
+
+  a:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(167,8,8, 0.2);
+    
+    transition: all .35s;
+  }
+  
+  a:hover{
+    color: black;
+  }
+  
+  a:hover:after{
+    width: 100%;
+  }
+
+a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(167,8,8);
+}
+
+#wrap {
+    display: grid;
+    grid-template-rows: [prva] 90px [druga] auto [treca] 80px [cetvrta];
+    grid-gap: 15px;
+    width: 100%;
+    
+    background: url(slike/k.jpg);
+    height: 100%;
+}
+
+#sredina {
+    display: grid;
+    grid-template-columns: [prva] 300px [druga] 500px [treca];
+    grid-gap: 200px;
+    width: 80%;
+    color: rgb(219, 174, 130);
+    height: 60%;
+    
+    margin: 20px 100px 0 90px;
+    padding: 0 0 0 0;
+
+}
+
+.slicica {
+    width: 40%;
+    padding: 18px;
+    border-radius: 10px;
+}
+
+.f {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(255, 255, 255);
+}
+
+.red {
+    display: grid;
+    grid-template-columns: 20% 30% 30%;
+    place-content: center center;
+    align-items: left;
+}
+
+.k {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(255, 255, 255);
+    grid-column: 2/ span 3;
+    justify-self: left;
+    height: 3px;
+    padding: -15px 5px 3px 15px;
+}
+
+#kontakt{
+    grid-column: [prva] 300px [druga];
+    float: left;
+    width: 290px;
+    padding-right: -15px;
+    margin-right: -15px;
+    min-height: 330px;
+    background: rgba(105, 105, 105, 0);
+    color: teal;
+    height: 340px;
+    justify-self: left;
+}
+
+.form {
+    width: 500px;
+    height: 500px;
+    border: 2px solid rgb(0, 0, 0);
+    
+    grid-column: [druga] 500px [treca];
+
+}
+    
+#registracija {
+    width: 500px;
+    height: 500px;
+}
+
+.dugme {
+    line-height: 1em;
+    padding: .5em;
+    border: 1px solid rgb(61, 43, 43);
+    border-radius: .5em;
+    color: black;
+    background: rgb(255, 255, 255);
+}
+
+.dugme:hover{
+    background-color: rgb(226, 139, 139);
+}
+
+#naslov {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(202, 14, 55);
+    height: 30px;
+    padding: -2px 0 3px 0;
+}

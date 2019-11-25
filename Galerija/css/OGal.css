@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    height: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+.meni {
+    background: rgba(226, 139, 139, 0.5);
+    display: grid;
+    grid-template-columns: [prva] 30% [druga] 15% [treca] 15% [cetvrta] 15% [peta] 15% [sesta];
+    justify-items: center;
+    align-items: top;
+    position: sticky;
+    height: 100px;
+    width: 100%;
+    grid-gap: 10px;
+}
+
+.Izlozba {
+    justify-self: top;
+    align-self: center;
+
+}
+
+.OGaleriji {
+    grid-column: cetvrta/peta;
+    justify-self: center;
+    align-self: center;
+}
+
+.Pocetna {
+    grid-column: treca/cetvrta;
+    justify-self: center;
+    align-self: center;
+    width: 60% center;
+    
+}
+
+.Kontakt {
+    grid-column: peta/sesta;
+    justify-self: center;
+    align-self: center;
+}
+
+.logo {
+    justify-self: center;
+    align-self: end;
+    width: 100%;
+    height: 130px;
+    padding: 0 50px 0 20px;
+}
+
+a{
+    display: -moz-popup;
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #333;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+  }
+
+  a span{
+    position: relative;
+    z-index: 2;
+  }
+
+  a:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(167,8,8, 0.2);
+    
+    transition: all .35s;
+  }
+  
+  a:hover{
+    color: black;
+  }
+  
+  a:hover:after{
+    width: 100%;
+  }
+
+a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(167,8,8);
+}
+
+#wrap {
+    display: grid;
+    grid-template-rows: [prva] 90px [druga] auto [treca] 80px [cetvrta];
+    grid-gap: 15px;
+    width: 100%;
+    background: rgb(255, 228, 228);
+    width: 100%;
+}
+
+#sredina {
+    display: grid;
+    grid-template-rows: [prva] auto [druga] 100px [treca];
+    grid-gap: 15px;
+    width: 100%;
+}
+
+.slika {
+    width: 93%;
+    height: 400px;
+    margin: 0 40px 0 50px;
+}
+
+.text {
+    margin: 0 50px 50px 80px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    color: rgb(116, 26, 26);
+    
+}
